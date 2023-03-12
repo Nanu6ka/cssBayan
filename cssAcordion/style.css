@@ -15,7 +15,6 @@ body {
   margin: 0 auto;
 }
 .title {
-  margin: 0 40px;
   font-size: 2em;
   font-weight: 700;
 }
@@ -29,6 +28,21 @@ body {
 }
 .mems-title {
   text-align: left;
+  display: block;
+  transition: .2s ease-out;
+}
+.mems-title:after {
+
+}
+.mems-title:hover {
+
+}
+.mems-input {
+  appearance: none;
+  -webkit-appearance: none;
+}
+.mems-input:checked + .mem-img{
+  display: block;
 }
 .mem-img {
   display: none;
