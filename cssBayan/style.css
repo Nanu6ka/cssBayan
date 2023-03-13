@@ -34,11 +34,15 @@ body {
   display: block;
   transition: .2s ease-out;
 }
+.mems-title:hover {
+  color: blueviolet;
+}
+.mems-title:hover + 
 .mems-title:after {
 
 }
-.mems-title:hover {
-
+.mems-title:hover + .mem-img{
+  display: block;
 }
 .mems-input {
   appearance: none;
@@ -50,7 +54,6 @@ body {
 .mem-img {
   display: none;
   margin: 0 auto;
-
 }
 .mem-img:hover {
   display: block;
@@ -66,11 +69,13 @@ img {
   }
   .container {
     width: 90vw;
-  
   }
   .title {
     font-size: 1.8em;
   }
+  .mem-img {
+  width: 80vw;
+}
 }
 @media (min-width: 819px) and (min-height: 1179px){
   body {
