@@ -8,7 +8,7 @@ body {
   font-size: 1.7em;
   line-height: 1.5;
   background-color: antiquewhite;
-  color: darkslategray;
+  color: blueviolet;
 }
 .container {
   width: 80vw;
@@ -17,6 +17,7 @@ body {
 .title {
   font-size: 2em;
   font-weight: 700;
+  color: darkslategrey;
 }
 .list {
  margin: 0 auto;
@@ -34,8 +35,9 @@ body {
   display: block;
   transition: .2s ease-out;
 }
-.mems-title:hover {
-  color: blueviolet;
+.mems-title:hover,
+.mems-input:checked + .mems-title {
+  color: darkslategrey;
 }
 .mems-title:hover + 
 .mems-title:after {
@@ -63,19 +65,19 @@ img {
   margin: auto;
 }
 
-@media (min-width: 319px) and (min-height: 567px){
+
+
+@media (min-width: 1920px) and (min-height: 1079px){
   body {
-    font-size: 1.5em;
+    font-size: 1.9em;
   }
   .container {
-    width: 90vw;
+    width: 70vw;
+  
   }
   .title {
-    font-size: 1.8em;
+    font-size: 2.1em;
   }
-  .mem-img {
-  width: 80vw;
-}
 }
 @media (min-width: 819px) and (min-height: 1179px){
   body {
@@ -89,15 +91,17 @@ img {
     font-size: 1.9em;
   }
 }
-@media (min-width: 1920px) and (min-height: 1079px){
+@media (min-width: 319px) and (min-height: 567px){
   body {
-    font-size: 1.9em;
+    font-size: 1.5em;
   }
   .container {
-    width: 70vw;
-  
+    width: 90vw;
   }
   .title {
-    font-size: 2.1em;
+    font-size: 1.8em;
   }
+  .mem-img {
+  width: 80vw;
+}
 }
