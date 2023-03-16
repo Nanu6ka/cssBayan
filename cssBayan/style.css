@@ -3,6 +3,9 @@
 *:after{
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.7em;
@@ -44,7 +47,7 @@ body {
 
 }
 .mems-title:hover + .mem-img{
-  display: block;
+  display: inline-block;
 }
 .mems-input {
   appearance: none;
@@ -52,6 +55,9 @@ body {
 }
 .mems-input:checked + .mem-img{
   display: block;
+}
+.icon {
+ 
 }
 .mem-img {
   display: none;
