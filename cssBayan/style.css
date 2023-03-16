@@ -1,0 +1,119 @@
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7em;
+  line-height: 1.5;
+  background-color: antiquewhite;
+  color: blueviolet;
+}
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+.title {
+  font-size: 2em;
+  font-weight: 700;
+  color: darkslategrey;
+}
+.list {
+ margin: 0 auto;
+}
+.item {
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid darkslategray;
+}
+.item:hover{
+  cursor: pointer;
+}
+.mems-title {
+  text-align: left;
+  display: block;
+  transition: .2s ease-out;
+}
+.mems-title:hover,
+.mems-input:checked + .mems-title {
+  color: darkslategrey;
+}
+.mems-title:hover + 
+.mems-title:after {
+
+}
+.mems-title:hover + .mem-img{
+  display: inline-block;
+}
+.mems-input {
+  appearance: none;
+  -webkit-appearance: none;
+}
+.mems-input:checked + .mem-img{
+  display: block;
+}
+.icon {
+ 
+}
+.mem-img {
+  display: none;
+  margin: 0 auto;
+}
+.mem-img:hover {
+  display: block;
+}
+.mem {
+  width: 35vw;
+  margin: auto;
+}
+
+
+
+@media (max-width: 1920px), (max-height: 1079px){
+  body {
+    font-size: 1.9em;
+  }
+  .container {
+    width: 70vw;
+  }
+  .title {
+    font-size: 2.1em;
+  }
+  .mem {
+    width: 50vw;
+  }
+}
+
+
+@media (max-width: 819px), (max-height: 1179px){
+  body {
+    font-size: 1.6em;
+  }
+  .container {
+    width: 85vw;
+  }
+  .title {
+    font-size: 1.9em;
+  }
+  .mem {
+    width: 60vw;
+  }
+}
+@media (max-width: 319px), (max-height: 567px){
+  body {
+    font-size: 1.5em;
+  }
+  .container {
+    width: 90vw;
+  }
+  .title {
+    font-size: 1.8em;
+  }
+  .mem {
+    width: 70vw;
+  }
+}
