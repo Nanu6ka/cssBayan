@@ -60,38 +60,44 @@ body {
 .mem-img:hover {
   display: block;
 }
-img {
-  height: 20em;
+.mem {
+  width: 35vw;
   margin: auto;
 }
 
 
 
-@media (min-width: 1920px) and (min-height: 1079px){
+@media (max-width: 1920px), (max-height: 1079px){
   body {
     font-size: 1.9em;
   }
   .container {
     width: 70vw;
-  
   }
   .title {
     font-size: 2.1em;
   }
+  .mem {
+    width: 50vw;
+  }
 }
-@media (min-width: 819px) and (min-height: 1179px){
+
+
+@media (max-width: 819px), (max-height: 1179px){
   body {
     font-size: 1.6em;
   }
   .container {
     width: 85vw;
-  
   }
   .title {
     font-size: 1.9em;
   }
+  .mem {
+    width: 60vw;
+  }
 }
-@media (min-width: 319px) and (min-height: 567px){
+@media (max-width: 319px), (max-height: 567px){
   body {
     font-size: 1.5em;
   }
@@ -101,7 +107,7 @@ img {
   .title {
     font-size: 1.8em;
   }
-  .mem-img {
-  width: 80vw;
-}
+  .mem {
+    width: 70vw;
+  }
 }
